@@ -13,7 +13,7 @@ def registDynamoDB(itemDict):
 
 
 def getWetherInfo(cityName):
-    url = END_POINT.format(city_name = cityName, API_key = "1a2c980345fe720e6420db88ac985abd")
+    url = END_POINT.format(city_name = cityName, API_key = "")
 
     response = requests.get(url).json()
     dateTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
